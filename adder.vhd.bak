@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+entity adder is
+port( a: IN std_logic_vector;
+b: IN std_logic_vector;
+ci: IN std_logic_vector;
+co: OUT std_logic_vector;
+s: OUT std_logic_vector);
+end adder;
+--Begin the architecture,
+architecture add of adder is
+begin
+		
+	--begin logic for the full adder
+	
+	
+	
+end seg;

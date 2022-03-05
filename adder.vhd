@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+entity adder is
+port( a: IN std_logic;
+b: IN std_logic;
+ci: IN std_logic;
+s: OUT std_logic;
+co: OUT std_logic);
+end adder;
+--Begin the architecture,
+architecture add of adder is
+begin
+		
+	--begin logic for the full adder
+	
+	s <= a XOR b XOR ci;
+	--co <= (a AND b) OR (a and ci) OR (b AND ci);
+	co <= b when ((a XOR b) = '0') else 
+				 ci;
+	
+end add;
